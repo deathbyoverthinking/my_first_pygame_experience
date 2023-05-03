@@ -31,10 +31,7 @@ class Game:
         pg.display.set_caption(f'{self.clock.get_fps() :.1f}')
 
     def draw(self):
-        #self.screen.fill('black')
         self.object_renderer.draw()
-        #self.map.draw()
-        #self.player.draw()
 
     def check_events(self):
         for event in pg.event.get():
